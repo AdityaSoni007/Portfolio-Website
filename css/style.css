@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Nunito:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Roboto&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+*::selection{
+    background: var(--yellow);
+    color:#333;
+}
+html{
+    font-size:60%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+header{
+    width:320px;
+    padding-top: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    height:100%;
+    background: #1a1a1a;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+}
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0px -29px;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+    
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:#fff;
+}
+header .user .post{
+    font-size: 2rem;
+    color:#fff;
+}
+header .navbar{
+    width:100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+header .navbar ul a{
+    display:block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:white;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navbar ul a:hover{
+    background: var(--yellow);
+    color:black;
+    font-weight: 800;
+}
+
+#menu{
+    position:fixed;
+    top:2rem;
+    right:2rem;
+    background: #333;
+    color:white;
+    cursor:pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index:10;
+}
+.home{
+    display:flex;
+    justify-self: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    position:relative;
+    top: 220px;
+    left:-21px;
+}
+.home h3{
+    font-size: 2.5rem;
+    color:white;
+    
+}
+.home h1{
+    font-size: 5rem;
+    color:white;
+}
+.home h1 span{
+    color:var(--yellow)
+}
+section {
+    min-height: 100vh;
+    
+    
+}
+.home p{
+    font-size: 2rem;
+    color:white;
+    padding:1.6rem 0;
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background: #333;
+    color:white;
+    cursor:pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding:0 0.5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: var(--yellow);
+    color: black;
+    font-weight: 800;
+}
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color:white;
+}
+.heading span{
+    color:var(--yellow);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+.about .row .info{
+    flex:1 1 48rem;
+    padding: 2.5rem 1rem;
+    padding-left: 6rem;
+
+
+}
+.info span{
+    color:white;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding: 1.5rem 0;
+    font-weight: normal;
+}
+
+ .box h3{
+    color:white;
+    padding: 0 .5rem;
+    font-size: 2rem;
+}
+.counter{
+   
+    display: flex;
+    width:550px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 400px;
+    bottom: 520px;
+}
+.box{
+    width:20rem;
+    background: #222;
+    text-align: center;
+    padding:2rem;
+    margin:2rem;
+}
+ .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+#cv{
+    margin-top: 28px;
+}
+.education .box-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: 2px solid white;
+    position: relative;
+
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#f9ca24;
+    color:black;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+    font-weight: 600;
+}
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:white;
+    padding-top: 1.5rem;
+}
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:white;
+    padding:1rem 0;
+    line-height: 23px;
+}
+.education .box-container .box i{
+    padding-top: 10px;
+    position:absolute;
+    top:-1.5rem;
+    left:-2.5rem;
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    font-size: 2.9rem;
+
+}
+.education .box-container .box {
+    margin:53px 38px;
+}
